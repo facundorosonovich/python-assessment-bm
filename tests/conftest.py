@@ -8,7 +8,7 @@ def set_up_cookie(playwright, request):
     else:
         browser = playwright.webkit.launch()
 
-    context = browser.new_context(storage_state="state.json", record_video_dir="videos/")
+    context = browser.new_context()
     yield context
 
 

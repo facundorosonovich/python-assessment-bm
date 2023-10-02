@@ -1,7 +1,6 @@
 import pytest
 
 
-# Use pytest-playwright fixtures
 @pytest.mark.usefixtures("browser", "page")
 class TestLogin:
 
